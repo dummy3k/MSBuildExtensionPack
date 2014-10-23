@@ -26,7 +26,7 @@
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Common\ExtensionPack.public.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>sis.snk</AssemblyOriginatorKeyFile>
     <AssemblyKeyProviderName>
     </AssemblyKeyProviderName>
     <SccProjectName>SAK</SccProjectName>
@@ -38,7 +38,7 @@
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <DelaySign>true</DelaySign>
+    <DelaySign>false</DelaySign>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -376,6 +376,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="sis.snk" />
     <None Include="SqlServer\SqlVersionDataClass.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>SqlVersionDataClass.designer.cs</LastGenOutput>
